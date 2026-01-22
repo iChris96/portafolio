@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --viridian-50: #c0fded;
+    --viridian-100: #59f4d4;
+    --viridian-200: #4bd1b6;
+    --viridian-300: #3fb39c;
+    --viridian-400: #349783;
+    --viridian-500: #2a7e6d;
+    --viridian-600: #236c5d;
+    --viridian-700: #1a5549;
+    --viridian-800: #0f3b32;
+    --viridian-900: #06221c;
+    --viridian-950: #031410;
+    --text-gray: rgb(203, 203, 203);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+
+
+h2 {
+    color: bisque;
+    margin-bottom: 0.4rem;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(238, 238, 238)
+}
+
+time {
+    font-size: 0.75rem;
+}
+
+small {
+    font-size: 0.65rem;
+}
+
+p {
+    color: var(--text-gray);
+    font-size: 0.75rem;
+    line-height: 1.6;
+    text-wrap: pretty;
+}
+
+body {
+    background-color: var(--viridian-950);
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0 auto 40px;
+    max-width: 800px;
+}
+
+header nav {
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+header nav a {
+    text-decoration: solid;
+    color: bisque
+}
+
+main {
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.picture {
+    width: 100%;
+    max-width: 180px;
+    flex: 1;
+    aspect-ratio: 1024 / 1535;
+    overflow: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+
+    /* if screen is less than 600px (mobile then.. */
+    .picture {
+        display: none;
+    }
+}
+
+
+.card {
+    background-color: var(--viridian-400);
+    display: flex;
+    flex-direction: row;
+    border-radius: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.card-content {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card p {
+    color: white
+}
+
+.coffee-text {
+    color: bisque;
+    font-weight: bold;
+    text-shadow: var(--viridian-600) px 3px 4px;
+}
+
+.experience {
+    margin: 1rem 0 1rem 0
+}
+
+.experience ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.experience ul li {
+    list-style: none;
+
+}
+
+.header-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+@media (max-width: 600px) {
+
+    /* if screen is less than 600px (mobile then.. */
+    .experience header {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .header-side {
+        display: block;
+    }
+}
+
+.experience .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.experience .tag {
+    border-radius: 6px;
+    background-color: var(--viridian-600);
+    padding: .1rem .3rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.stick-footer {
+    width: 100%;
+    max-width: 800px;
+    bottom: 1vw;
+    text-align: center;
+    margin: 2rem;
+}
+
+.skill-list {
+    display: inline-flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.skill-list li {
+    background-color: var(--viridian-600);
+    padding: .2rem .6rem;
+    border-radius: 0.3rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
